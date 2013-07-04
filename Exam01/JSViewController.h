@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface JSViewController : UIViewController
+@interface JSViewController : UIViewController {
+    AVAudioPlayer *audioPlayer;
+}
+
+- (IBAction)audioControlButtonClick:(id)sender;
 
 @end

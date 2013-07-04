@@ -23,6 +23,8 @@
 		B0A3A03717845D730013A60B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A3A01217845D720013A60B /* Foundation.framework */; };
 		B0A3A03F17845D730013A60B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0A3A03D17845D730013A60B /* InfoPlist.strings */; };
 		B0A3A04217845D730013A60B /* Exam01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A3A04117845D730013A60B /* Exam01Tests.m */; };
+		B0A3A04E17845DB90013A60B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A3A04D17845DB90013A60B /* AVFoundation.framework */; };
+		B0E1C96B178468E3001C9545 /* GetLucky.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0E1C96A178468E3001C9545 /* GetLucky.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		B0A3A03E17845D730013A60B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0A3A04017845D730013A60B /* Exam01Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exam01Tests.h; sourceTree = "<group>"; };
 		B0A3A04117845D730013A60B /* Exam01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exam01Tests.m; sourceTree = "<group>"; };
+		B0A3A04B17845DA40013A60B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B0A3A04D17845DB90013A60B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B0E1C96A178468E3001C9545 /* GetLucky.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GetLucky.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A3A04E17845DB90013A60B /* AVFoundation.framework in Frameworks */,
 				B0A3A01117845D720013A60B /* UIKit.framework in Frameworks */,
 				B0A3A01317845D720013A60B /* Foundation.framework in Frameworks */,
 				B0A3A01517845D720013A60B /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +93,9 @@
 		B0A3A00417845D720013A60B = {
 			isa = PBXGroup;
 			children = (
+				B0E1C96A178468E3001C9545 /* GetLucky.mp3 */,
+				B0A3A04D17845DB90013A60B /* AVFoundation.framework */,
+				B0A3A04B17845DA40013A60B /* AudioToolbox.framework */,
 				B0A3A01617845D720013A60B /* Exam01 */,
 				B0A3A03A17845D730013A60B /* Exam01Tests */,
 				B0A3A00F17845D720013A60B /* Frameworks */,
@@ -232,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E1C96B178468E3001C9545 /* GetLucky.mp3 in Resources */,
 				B0A3A01B17845D720013A60B /* InfoPlist.strings in Resources */,
 				B0A3A02317845D720013A60B /* Default.png in Resources */,
 				B0A3A02517845D720013A60B /* Default@2x.png in Resources */,
@@ -385,6 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exam01/Exam01-Prefix.pch";
 				INFOPLIST_FILE = "Exam01/Exam01-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,6 +407,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exam01/Exam01-Prefix.pch";
 				INFOPLIST_FILE = "Exam01/Exam01-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +466,7 @@
 				B0A3A04717845D730013A60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0A3A04817845D730013A60B /* Build configuration list for PBXNativeTarget "Exam01Tests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +475,7 @@
 				B0A3A04A17845D730013A60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
